@@ -14,10 +14,9 @@ use function Ramsey\Uuid\v1;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::view('/view', 'welcome');
 
-Route::get('/view', function () {
-    return view('welcome');
-});
+
 
 Route::redirect('/redirect1', '/redirect2');
 
