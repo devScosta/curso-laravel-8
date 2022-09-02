@@ -17,6 +17,12 @@ use function Ramsey\Uuid\v1;
 |
 */
 
+Route::resource('products', 'App\Http\Controllers\ProductController');
+
+/*
+Route::delete('products/{id}', 'App\Http\Controllers\ProductController@destroy')->name('products.destroy');
+
+Route::put('products/{id}', 'App\Http\Controllers\ProductController@update')->name('products.update');
 
 Route::get('/products/{id}/edit', 'App\Http\Controllers\ProductController@edit')->name('products.edit');
 
@@ -27,3 +33,8 @@ Route::get('/products/{id}', 'App\Http\Controllers\ProductController@show')->nam
 Route::get('/products', 'App\Http\Controllers\ProductController@index')->name('products.index');
 
 Route::post('/products', 'App\Http\Controllers\ProductController@strore')->name('products.store');
+*/
+
+Route::get('/login', function() {
+    return 'Login';
+})->name('login');
